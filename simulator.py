@@ -14,17 +14,20 @@ def move_sequence(car, directions):
   pass
 
 def move(car, direction):
-    if direction == 'N':
-        car[0] = car[0] - 1
-    elif direction == 'S':
-        car[0] = car[0] + 1
-    elif direction == 'L':
-        car[1] = car[1] + 1
-    elif direction == 'w':
-        car[1] = car[1] - 1
-    else:
-        print("Invalid direction")
-    return car
+  if direction == 'N':
+    car[0] -= 1
+  elif direction == 'S':
+    car[0] += 1
+  elif direction == 'L':
+    car[1] += 1
+  elif direction == 'O':
+    car[1] -= 1
+  else
+    Warning('Invalid Direction')
+  print(car)
+  return car
+
+move(car,'NNLL')
 
 move(car, 'K')
 print(car)
