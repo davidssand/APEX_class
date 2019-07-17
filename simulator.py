@@ -2,10 +2,10 @@ scenario = [
             [1, 1, 1, 1],
             [1, 1, 1, 1],
             [1, 1, 1, 1],
-            [1, 1, 1, 1]
+            [0, 1, 1, 1]
             ]
 
-car = [0, 0]
+car = [3, 0]
 
 def boundry_restrictions(coordinates):
   pass
@@ -16,6 +16,6 @@ def move_sequence(car, directions):
 def move(car, direction):
   pass
 
-print(move_sequence(car, "SSLLNNNL") == [1, 3])
+print(move_sequence(car, "NNLLNNO") == [0, 1])
 
 print("done")
